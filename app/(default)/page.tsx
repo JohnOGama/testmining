@@ -30,7 +30,13 @@ export default function Home() {
   return (
     
     <div  style= {myStyle}>
-      <div>
+      <div
+      style={{
+        display: 'flex',
+        alignItems: 'left',
+        justifyContent: 'left',
+      }} 
+      >
       <Hero />
       </div>
       

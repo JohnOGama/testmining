@@ -4,7 +4,6 @@ import HomeBgEmail from '../public/images/homeBgIronOre.jpeg'
 import ModalVideo from '@/components/modal-video'
 
 
-
 export default function Hero() {
   return (
     <section >
@@ -37,7 +36,7 @@ export default function Hero() {
            
             >
               
-              <h1 className="h1 mb-4">Welcome to ORCA Mining</h1>
+              <h1 className="h1 mb-4">Let's talk </h1>
               
                 {/* className="h1 mb-4"
               <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
