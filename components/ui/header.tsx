@@ -8,7 +8,7 @@ import "@/app/css/Background.module.css"
 export default function Header() {
   return (
     <header className="absolute w-50 z-30">
-      <div className="max-w-8sm mx-auto px-2 sm:px-6">
+      <div className="max-w-6sm mx-auto px-4 sm:px-6">
         <div className="flex items-center h-30">
 
           {/* Site branding  sac*/}
@@ -63,11 +63,6 @@ export default function Header() {
               <li>
                 <Link href="/signup" className=" text-black hover:text-orange-600 ml-4">
                   CORPORATE GOVERNANCE
-                </Link>
-              </li>
-              <li>
-                <Link href="/signup" className=" text-black hover:text-orange-600 ml-4">
-                  COMPANY DISCLOSURE
                 </Link>
               </li>
               <li>
