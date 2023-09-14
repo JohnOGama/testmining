@@ -60,6 +60,8 @@ export default function MobileMenu() {
         style={mobileNavOpen ? { maxHeight: mobileNav.current?.scrollHeight, opacity: 1 } : { maxHeight: 0, opacity: 0.8 }}
       >
         <ul className="bg-gray-800 px-4 py-2">
+
+          {/*
           <li>
             <Link href="/signin" className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
               Sign in
@@ -73,6 +75,34 @@ export default function MobileMenu() {
               Sign up
             </Link>
           </li>
+  */}
+              <li>
+              <Link href="/signup" className=" text-black hover:text-orange-600 ml-4">
+                  ABOUT US
+                </Link>
+              </li>
+              <li>
+                <Link href="/signup" className=" text-black hover:text-orange-600 ml-4">
+                  SUSTAINABILITY
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/signup" className=" text-black hover:text-orange-600 ml-4">
+                  CORPORATE GOVERNANCE
+                </Link>
+              </li>
+              <li>
+                <Link href="/signup" className=" text-black hover:text-orange-600 ml-4">
+                  CORPORATE GOVERNANCE
+                </Link>
+              </li>
+              <li>
+                <Link href="/signup" className=" text-black hover:text-orange-600 ml-4">
+                  INVESTOR RELATIONS
+                </Link>
+              </li>
+
         </ul>
       </nav>
     </div>
