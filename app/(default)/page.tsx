@@ -26,8 +26,7 @@ export default function Home() {
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    height: '100vh',
-    width: '100%'
+    height: '100vh'
   };
 
   return (
