@@ -11,11 +11,11 @@ export default function Header() {
       <div className="max-w-8sm mx-auto px-2 sm:px-6">
         <div className="flex items-center h-30">
 
-          {/* Site branding */}
+          {/* Site branding  sac*/}
           <div className="shrink-0 mr-4">
             {/* Logo */}
             <Link href="/" className="block" aria-label="Cruip">
-           <Image className="h-20 mix-blend-multiply" src={logo} alt={""} style={{display: 'flex'}}/>
+           <Image src={logo} alt={""} style={{display: 'flex'}}/>
               
               
             </Link>
