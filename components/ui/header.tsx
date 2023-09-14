@@ -42,7 +42,9 @@ export default function Header() {
                   Sign up
                 </Link>
               </li>
+                         */}     
               <li>
+
                 <Link href="/signup" className=" text-black hover:text-orange-600 ml-4">
                   ABOUT US
                 </Link>
@@ -52,7 +54,7 @@ export default function Header() {
                   SUSTAINABILITY
                 </Link>
               </li>
-  */}
+
               <li>
                 <Link href="/signup" className=" text-black hover:text-orange-600 ml-4">
                   CORPORATE GOVERNANCE
