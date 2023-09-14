@@ -21,7 +21,7 @@ export default function Home() {
     //`url("https://img.freepik.com/free-photo/wide-angle-shot-singletree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg")`,
    
     
-    marginTop:'-10px',
+    marginTop:'-70px',
     fontSize:'50px',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
