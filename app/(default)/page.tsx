@@ -32,23 +32,28 @@ export default function Home() {
   };
 
   return (
-    
-    <div style={backgroundImgStyle}>
-      <div  style={{
-          display: 'flex',
-          alignItems: 'left',
-          justifyContent: 'left',
-        }} >
-          <Hero />
+    <>
+      <div style={backgroundImgStyle}>
+        <div  style={{
+            display: 'flex',
+            alignItems: 'left',
+            justifyContent: 'left',
+          }} >
+            <Hero />
+        </div>
+        
+        <div className='boxexploreFont' style={{
+            display: 'flex',
+            alignItems: 'left',
+            justifyContent: 'left',
+          }} data-aos="fade-up" data-aos-delay="400" >
+            <a className='boxexploreFont'  href="#0">Explore here</a>
+        </div>
+        
       </div>
-      <div >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
-        <h1 className="h1 mb-4">Let's sample </h1>
-      </div>
-      </div>
-      
-   
+
       {/*
+         <Features /> 
       style= {videoStyle}
       sdfdsf
        style={{
@@ -64,8 +69,8 @@ export default function Home() {
       <Testimonials />
       <Newsletter />
           */}
-    </div>
-
+  
+</>
    
     
   )

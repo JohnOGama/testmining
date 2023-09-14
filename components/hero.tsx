@@ -9,7 +9,6 @@ export default function Hero() {
     <section >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
 
-       
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
          {/* Hero content 
         <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16" >
