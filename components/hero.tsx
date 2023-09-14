@@ -1,4 +1,5 @@
 import VideoThumb from '@/public/images/hero-image-01.jpg'
+
 import ModalVideo from '@/components/modal-video'
 
 import HomeBgEmail from '../app/src/assets/images/homeBgIronOre.jpg'
@@ -29,7 +30,7 @@ export default function Hero() {
             thumbWidth={500}
             thumbHeight={600}
             thumbAlt="Modal video thumbnail"
-            video="/videos/mining.mp4"
+            video="/videos/Mining.mp4"
             videoWidth={1920}
             videoHeight={1080} />
 
