@@ -22,7 +22,7 @@ export default function DefaultLayout({
       easing: 'ease-out-sine',
     })
   })
-
+  
   return (
     <>
       <main className="grow">

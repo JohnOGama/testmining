@@ -40,3 +40,7 @@
     color: orange;
     cursor: pointer;
 }
+.talkFont {
+    font-size: 40px;
+    color: rgb(94, 167, 236);
+}

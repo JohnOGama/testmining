@@ -14,17 +14,16 @@ export default function Hero() {
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
        
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+          <div className="max-w-3xl mx-auto text-orange-400 pb-12 md:pb-16">
             <h1 className="boxexploreFont" data-aos="fade-up">Let's talk you requirement</h1>
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">ORCA Mining and Construction is our espertise expertise. <br></br> Feel free to dicuss</p>
-            <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
+            <p className="text-xl text-gray-400 mb-8 text-center" data-aos="fade-up" data-aos-delay="200">Mining and Construction Industry is our expertise. <br></br> Feel free to dicuss</p>
+            <div className="text-xl mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
-                <a className="boxexploreFont btn bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Contact us </a>
+                <a className="btn text-white bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Contact us </a>
               </div>
               
             </div>
           </div>
-        <br></br>
           <ModalVideo
             thumb={HomeBgEmail}
             thumbWidth={500}
