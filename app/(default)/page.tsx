@@ -9,7 +9,6 @@ import Newsletter from '@/components/newsletter'
 import Zigzag from '@/components/zigzag'
 import Testimonials from '@/components/testimonials'
 
-import "../css/Background.module.css"
 import background from "../../app/src/assets/images/homeDefaultBg.jpg"
 // "../src/assets/images/homeDefaultBg.png" 
 //'../../src/assets/images/features-03-image-03.png'
@@ -42,13 +41,7 @@ export default function Home() {
             <Hero />
         </div>
         
-        <div className='boxexploreFont' style={{
-            display: 'flex',
-            alignItems: 'left',
-            justifyContent: 'left',
-          }} data-aos="fade-up" data-aos-delay="400" >
-            <a className='boxexploreFont'  href="#0">Explore here</a>
-        </div>
+        
         
       </div>
 
