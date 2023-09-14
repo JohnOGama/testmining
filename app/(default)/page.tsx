@@ -9,7 +9,7 @@ import Newsletter from '@/components/newsletter'
 import Zigzag from '@/components/zigzag'
 import Testimonials from '@/components/testimonials'
 
-import styles from '../app/css/Background.module.css'
+import "../css/Background.module.css"
 import background from "../../app/src/assets/images/homeDefaultBg.jpg"
 // "../src/assets/images/homeDefaultBg.png" 
 //'../../src/assets/images/features-03-image-03.png'
@@ -33,7 +33,7 @@ export default function Home() {
 
   return (
     
-    <div style= {backgroundImgStyle} >
+    <div style={backgroundImgStyle}>
       <div  style={{
           display: 'flex',
           alignItems: 'left',

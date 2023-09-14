@@ -9,11 +9,12 @@ export default function Hero() {
     <section >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
 
-        {/* Hero content */}
+       
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
+         {/* Hero content 
         <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16" >
         <h1 className="h1 mb-4">Let's talk </h1>
-        </div>
+        </div>*/}
            
         </div>
         <div>
@@ -21,6 +22,7 @@ export default function Hero() {
             display: 'flex',
             alignItems: 'left',
             justifyContent: 'left',
+            marginTop: '-60px'
           }} 
           >
           <ModalVideo
