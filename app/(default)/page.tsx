@@ -16,11 +16,11 @@ import background from "../../app/src/assets/images/homeDefaultBg.jpg"
 
 export default function Home() {
 
-  const videoStyle={
+  const backgroundImgStyle={
     backgroundImage:
     `url(${background.src})`,
     //`url("https://img.freepik.com/free-photo/wide-angle-shot-singletree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg")`,
-    height:'80vh',
+    height:'150vh',
     
     marginTop:'-70px',
     fontSize:'50px',
@@ -31,19 +31,30 @@ export default function Home() {
 
   return (
     
-    <div  >
-      <Hero />
+    <div style= {backgroundImgStyle} >
+      <div  style={{
+          display: 'flex',
+          alignItems: 'left',
+          justifyContent: 'left',
+        }} >
+          <Hero />
+      </div>
+      <div >
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
+        <h1 className="h1 mb-4">Let's sample </h1>
+      </div>
+      </div>
       
    
       {/*
       style= {videoStyle}
-sdfdsf
+      sdfdsf
        style={{
         display: 'flex',
         alignItems: 'left',
         justifyContent: 'left',
       }} 
-   <Features /> 
+      <Features /> 
       `url(${background})
       <br></br>
        
@@ -51,7 +62,7 @@ sdfdsf
       <Testimonials />
       <Newsletter />
           */}
-            </div>
+    </div>
 
    
     
