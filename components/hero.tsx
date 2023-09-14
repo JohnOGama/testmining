@@ -17,7 +17,7 @@ export default function Hero() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-orange-400 pb-12 md:pb-16">
             <h1 className="boxexploreFont" data-aos="fade-up">Let's talk you requirement</h1>
-            <p className="text-xl text-gray-400 mb-8 text-center" data-aos="fade-up" data-aos-delay="200">Mining and Construction Industry is our expertise. <br></br> Feel free to dicuss</p>
+            <p className="text-xl text-gray-400 mb-8 " data-aos="fade-up" data-aos-delay="200">Mining and Construction Industry is our expertise. Feel free to dicuss</p>
             <div className="text-xl mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
                 <a className="btn text-white bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Contact us </a>
@@ -33,10 +33,9 @@ export default function Hero() {
             video="/videos/Mining.mp4"
             videoWidth={1920}
             videoHeight={1080} />
-
-
+            
         </div>
-
+        
       </div>
     </section>
   )
