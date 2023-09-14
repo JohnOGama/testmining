@@ -20,13 +20,15 @@ export default function Home() {
     backgroundImage:
     `url(${background.src})`,
     //`url("https://img.freepik.com/free-photo/wide-angle-shot-singletree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg")`,
-    height:'120vh',
+   
     
-    marginTop:'-70px',
+    marginTop:'-10px',
     fontSize:'50px',
-   // backgroundSize: 'cover',
-    backgroundSize: '1600px 1200px',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
+    width: '100vw',
+    height: '100vh'
   };
 
   return (
