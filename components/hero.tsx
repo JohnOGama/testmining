@@ -1,8 +1,10 @@
+import Image from "next/image";
 import VideoThumb from '@/public/images/hero-image-01.jpg'
 
 import ModalVideo from '@/components/modal-video'
 
 import HomeBgEmail from '../app/src/assets/images/homeBgIronOre.jpg'
+import contactus from '../app/src/assets/images/contactus.png'
 import '../app/css/Background.module.css'
 
 export default function Hero() {
@@ -20,9 +22,17 @@ export default function Hero() {
             <p className="text-xl text-black mb-8 " data-aos="fade-up" data-aos-delay="200">Mining and Construction Industry is our expertise. Feel free to dicuss</p>
             <div className="text-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
-                <a className="btn text-white bg-orange-600 hover:bg-orange-700 w-50 " href="#0">Contact us </a>
+                <a className="btn text-white bg-orange-600 hover:bg-orange-700 w-50 " href="#0">
+                <Image src={contactus} alt={""} style={{display: 'flex',alignItems:'center',justifyContent: 'center',width: '50px',height:'50px'}}> 
+                </Image> Contact us <br></br> (+63) 915 1234567                   </a> 
+                
               </div>
-              
+              <div data-aos="fade-up" data-aos-delay="600">
+               
+              </div>
+              <div  data-aos="fade-up" data-aos-delay="600">
+                <a className="text-orange-400 w-50 " href="#0" style={{display: 'flex',alignItems:'left',justifyContent: 'left',width: '100px',height:'50px'}}>   </a> 
+              </div>
             </div>
           </div>
           <ModalVideo
