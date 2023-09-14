@@ -27,7 +27,7 @@ export default function Home() {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     height: '100vh',
-    width: '100vw'
+    width: '100%'
   };
 
   return (
