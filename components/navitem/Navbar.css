@@ -6,6 +6,17 @@
   align-items: center;
 }
 
+.fa-bars {
+  color: white;
+}
+
+.fa-xmark {
+  color: white;
+}
+.menu-icon {
+  display: none;
+}
+
 .navbar-logo {
   color: rgb(7, 7, 7);
   text-decoration: none;
@@ -27,6 +38,9 @@
 
 
 
+
+
+
 .nav-item {
   display: flex;
   align-items: center;
@@ -45,4 +59,33 @@
 .nav-item a:hover {
   background: #08c5d6;
   color: white;
+}
+
+
+@media screen and (max-width: 960px) {
+
+  .navbar {
+    position: relative;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+.menu-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100%,60%);
+  font-size: 1.8rem;
+  cursor: pointer;
+
+}
+
 }

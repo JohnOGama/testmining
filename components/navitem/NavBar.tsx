@@ -10,15 +10,29 @@ import Dropdown from "./Dropdown";
 import DropdownAbout from "./DropdownAbout";
 import DropdownProduct from "./DropdownProduct";
  
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
 function Navbar() {
   const [dropdown, setDropdown] = useState(false);
   const [dropdownabout, setDropdownabout] = useState(false);
   const [dropdownproduct, setDropdownproduct] = useState(false);
 
+  const [state,setState] = useState({
+    clicked : false
+  })
+  //state = {clicked : false}
+
+  const handleClick =() => {
+    setState({clicked: !state.clicked })
+}
   return (
     <>
+    
       <nav className="navbar">
-       
+      <div className='menu-icon' onClick={handleClick}>
+          <FontAwesomeIcon className={state.clicked ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'}></FontAwesomeIcon>
+      </div>
         <ul className="nav-items">
           
           {navItems.map((item) => {
