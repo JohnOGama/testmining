@@ -15,6 +15,7 @@ import background from "../../app/src/assets/images/homeDefaultBg.jpg"
 
 export default function Home() {
 
+
   const backgroundImgStyle={
     backgroundImage:
     `url(${background.src})`,
@@ -22,26 +23,35 @@ export default function Home() {
    
     
     marginTop:'-70px',
-    fontSize:'50px',
-    backgroundPosition: 'center',
+    //fontSize:'50px',
+    backgroundPosition: 'center center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    height: '100vh',
+    innerHeight: '100vh',
+    innerWidth: '100%'
     
   };
 
   return (
     <>
-      <div style={backgroundImgStyle}>
+      <div  className="w-full z-50"  style={backgroundImgStyle}>
         <div  style={{
             display: 'flex',
             alignItems: 'left',
             justifyContent: 'left',
           }} >
-            <Hero />
+            <Hero /> 
+           
         </div>
-      </div>
 
+      </div>
+      <Features />
+      <Zigzag />
+      <br></br>
+      <br></br>
+          <Testimonials />
+         
+         
       {/*
          <Features /> 
       style= {videoStyle}

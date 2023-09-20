@@ -14,17 +14,20 @@ export default function Hero() {
 
      
         {/* Hero content */}
-        <div className="relative pt-40 pb-40 md:pt-60 md:pb-16">
+        <div className="relative pt-40 pb-40 md:pt-30 md:pb-16">
          
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-orange-400 pb-12 md:pb-16">
-            <h1 data-aos="fade-up">Let's talk you requirement</h1>
-            <p className="text-xl text-black mb-8 " data-aos="fade-up" data-aos-delay="200">Mining and Construction Industry is our expertise. Feel free to dicuss</p>
+          <div className="max-w-3xl mx-auto  text-gray-800 md:pb-10">
+            <h1 className='text-5xl  ' data-aos="fade-up">Let's talk your requirement</h1>
+            <p className="text-6sm text-gray-800 mb-8 " data-aos="fade-up" data-aos-delay="200">Mining , Construction and Waste Management Industry is our expertise. Making the complex simple.</p>
             <div className="text-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-              <div data-aos="fade-up" data-aos-delay="400">
-                <a className="btn text-white bg-orange-600 hover:bg-orange-700 w-50 " href="#0">
-                <Image src={contactus} alt={""} style={{display: 'flex',alignItems:'center',justifyContent: 'center',width: '50px',height:'50px'}}> 
-                </Image> Contact us <br></br> (+63) 915 1234567                   </a> 
+              <div data-aos="fade-up" data-aos-delay="400" className="flex">
+                <a className="btn text-white bg-gray-800 hover:bg-orange-500 w-30 " href="#0">
+                <Image src={contactus} alt={""} style={{alignContent:'normal',alignItems:'left', width: '50px',height:'50px'}}> 
+                </Image> 
+                 (+63) 915 1234567 
+                 <br></br> (+63) 915 8888888
+                </a> 
                 
               </div>
               <div data-aos="fade-up" data-aos-delay="600">
