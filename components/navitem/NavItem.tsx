@@ -15,19 +15,19 @@ export const navItems = [
     {
       id: 3,
       title: "Corporate Governance",
-      path: "../pages/products",
+      path: "#",
       cName: "nav-item",
     },
     {
       id: 4,
       title: "Company Disclosure",
-      path: "../pages/contactus",
+      path: "#",
       cName: "nav-item",
     },
     {
       id: 5,
       title: "Investor Relations",
-      path: "../pages/contactus",
+      path: "#",
       cName: "nav-item",
     },
   ];
