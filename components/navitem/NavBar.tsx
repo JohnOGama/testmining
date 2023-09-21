@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from "react";
+
 //import { Link } from "react-router-dom";
 import Link from 'next/link'
 //import * as Icons from "react-icons/fa";
@@ -9,6 +10,7 @@ import Button from "./Button";
 import Dropdown from "./Dropdown";
 import DropdownAbout from "./DropdownAbout";
 import DropdownProduct from "./DropdownProduct";
+
  
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icon } from "@fortawesome/fontawesome-svg-core";
@@ -16,6 +18,8 @@ import { faPenNib } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 import 'font-awesome/css/font-awesome.min.css';
+
+
 
 function Navbar() {
   const [dropdown, setDropdown] = useState(false);
@@ -40,9 +44,9 @@ function Navbar() {
             {
              
               state.clicked 
-              ?  'fa fa-bars'
+              ?  'fa fa-times'
               : 'fa fa-bars'
-            }>
+            } >
           
           </i>
           {/* 
@@ -50,7 +54,7 @@ function Navbar() {
            'fa fa-shopping-cart'
           */}
       </div>
-        <ul className={state.clicked ? 'nav-item active' : 'nav-item'}>
+        <ul className={state.clicked ? 'nav-menu active' : 'nav-menu'}>
           
           {navItems.map((item) => {
              

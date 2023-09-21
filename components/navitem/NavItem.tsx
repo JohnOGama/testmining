@@ -36,7 +36,7 @@ export const navItems = [
     {
       id: 1,
       title: "Company Profile",
-      path: "../pages/companyprofile",
+      path: "../pages/companyprofile/",
       cName: "submenu-item",
     },
     {
