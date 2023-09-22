@@ -36,37 +36,31 @@ export const navItems = [
     {
       id: 1,
       title: "Company Profile",
-      path: "../pages/companyprofile/",
+      path: "/pages/companyprofile",
       cName: "submenu-item",
     },
     {
       id: 2,
       title: "Mission and Vision",
-      path: "../pages/profile",
+      path: "/pages/vision",
       cName: "submenu-item",
     },
     {
       id: 3,
       title: "Core Values",
-      path: "../pages/profile",
-      cName: "submenu-item",
-    },
-    {
-      id: 4,
-      title: "Key Policies",
-      path: "../pages/profile",
+      path: "../pages/core-values",
       cName: "submenu-item",
     },
     {
       id: 5,
       title: "Organizational Chart",
-      path: "../pages/profile",
+      path: "../pages/orgchart",
       cName: "submenu-item",
     },
     {
       id: 5,
       title: "Articles of Incorporation and By-Laws",
-      path: "../pages/profile",
+      path: "../pages/articles",
       cName: "submenu-item",
     },
   ];
