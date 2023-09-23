@@ -8,37 +8,23 @@ import OrcaLogoHeader from "../../app/src/assets/images/OrcaLogoHeader.png"
 export default function Header() {
   return (
     <header className="flex w-full z-30" style={{backgroundColor:'#08c5d6'}}>
-      <div className="max-w-6sm mx-auto px-4 sm:px-6">
+      <div className="max-w-6sm mx-auto px-4 sm:px-6 ">
         <div className="flex items-center justify-between h-30">
           {/* Site branding */}
-          <div className="shrink-0 mr-4">
+          <div className="shrink-0 mr-1">
             {/* Logo */}
-            <Link href="/" className="block" aria-label="Cruip">
+            <Link href="/"  >
               <Image src={OrcaLogoHeader} alt=''/>
             </Link>
+           
           </div>
-          <Navbar/>
-          {/* Desktop navigation
-          <nav className="hidden md:flex md:grow">
-            {/* Desktop sign in links 
-            <ul className="flex grow justify-end flex-wrap items-center">
-              <li>
-                <Link
-                  href="/signin"
-                  className="font-medium text-black hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-                >
-                  Sign in
-                </Link>
-              </li>
-             
-            </ul>
-          </nav>
-             <MobileMenu />
- */} 
-       
-
+        
+        
         </div>
+        
       </div>
+      <Navbar/>
     </header>
+    
   )
 }

@@ -21,7 +21,7 @@ import 'font-awesome/css/font-awesome.min.css';
 
 
 
-function Navbar() {
+export default function Navbar1() {
   const [dropdown, setDropdown] = useState(false);
   const [dropdownabout, setDropdownabout] = useState(false);
   const [dropdownproduct, setDropdownproduct] = useState(false);
@@ -58,7 +58,56 @@ function Navbar() {
           
           {navItems.map((item) => {
              
+           if (item.title === "Services") {
           
+              return (
+                <li
+                  key={item.id}
+                  className={item.cName}
+                  onMouseEnter={() => setDropdown(true)}
+                  onMouseLeave={() => setDropdown(false)}
+                >
+                  <Link href={item.path}>{item.title}</Link>
+                  {dropdown && <Dropdown />}
+                </li>
+              );
+            } else if(item.title === "About") {
+             
+
+              return (
+                  
+                <li
+                
+                  key={item.id}
+                  className={item.cName}
+                  onMouseEnter={() => setDropdownabout(true)}
+                  onMouseLeave={() => setDropdownabout(false)}
+                >
+                  
+                  <Link href={item.path}>{item.title}</Link>
+                  {dropdownabout && <DropdownAbout />}
+                </li>
+               
+              );
+              
+            } else if(item.title === "Corporate Governance") {
+                return (
+                    
+                  <li
+                  
+                    key={item.id}
+                    className={item.cName}
+                    onMouseEnter={() => setDropdownproduct(true)}
+                    onMouseLeave={() => setDropdownproduct(false)}
+                  >
+                    
+                    <Link href={item.path}>{item.title}</Link>
+                    {dropdownproduct && <DropdownProduct />}
+                  </li>
+                
+                );
+            }
+            
             return (
               <li key={item.id} className={item.cName}>
                 <Link href={item.path}>{item.title}</Link>
@@ -72,4 +121,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+

@@ -1,6 +1,16 @@
+{/*
+  
+  * {
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+  */}
+
 .navbar {
   height: 10vh;
-  background:#08c5d6;
+ 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,102 +68,68 @@
 
   .navbar {
     position: relative;
+   
     
 }
 
 .nav-menu {
-    display:flex;
-    flex-direction: column;
-    width: 100%;
-    height: 350px;
-    position:absolute;
-    top: 220px;
-    left: -350%;
-    opacity: 1;
-    transition: all 0.5s ease-out;
-   
+  display :flex;
+  flex-direction: column;
+  color: white;
+  height: 300px;
+  position: relative;
+  top: 190px;
+  left: -350%;
+  transition: all 0.5s ease-out;
+
 }
 
 .nav-menu.active {
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-  position: relative;
+  background-color: #08c5d6;
   left: 0;
-   opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-    width: 120%;
+  opacity: 1;
+  transition: all 0.5s ease;
+  z-index: 1;
+  width: 500px;
+  left: -12%;
+  
+  align-items : center;
 }
-
 
 .nav-item {
-    text-align: center;
-    padding: 1rem;
-    width: 120%;
-    display: table;
-    align-items: center;
-}
-
-.submenu-item {
+  background-color: #08c5d6;
+  left: 0;
   text-align: center;
   padding: 1rem;
   width: 120%;
   display: table;
-  align-items: center;
 }
 
-.nav-menu:hover {
-    background-color: #08c5d6;
-    border-radius: 0;
+.nav-item:hover {
+
+  border-radius: 0;
 }
+
 
 
 .menu-icon {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 100;
-    transform: translate(-200%,30%);
-    font-size: 1.8rem;
-    cursor: pointer;
-   
+  display :flex;
+  position: relative;
+  left: 300px;
+  transform: translate(-100%,60%);
+  font-size: 2rem;
+  cursor: pointer;
+
 }
 
-.fa-times {
-    color: white;
-    font-size: 2rem;
-}
 .fa-bars {
   color: white;
 }
 
-.nav-item:hover {
-    background: #08c5d6;
-    background-color: #08c5d6;
-    color: white;
-    transition: 250ms;
-    
-}
-
-.submenu-item:hover {
-  background: #08c5d6;
+.fa-times {
   color: white;
-  transition: 250ms;
-  background-color: black;
 }
 
-.submenu-item.active {
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-  position: absolute;
-  left: 0;
-   opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-    width: 120%;
-}
 
 
 }
