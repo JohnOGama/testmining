@@ -4,7 +4,7 @@ export const metadata = {
   }
   
   import Link from 'next/link'
-  import background from "../../src/assets/images/OrgChart.jpg"
+  import background from "../../../src/assets/images/OrgChart.jpg"
   import React from 'react';
   export default function Mineral() {
   
