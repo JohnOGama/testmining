@@ -4,24 +4,11 @@ export const metadata = {
   }
   
   import Link from 'next/link'
-  import background from "../../src/assets/images/OrgChart.jpg"
+
   
   export default function OrgChart() {
   
-    const backgroundImgStyle={
-      backgroundImage:
-      `url(${background.src})`,
-      //`url("https://img.freepik.com/free-photo/wide-angle-shot-singletree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg")`,
-     
-      
-      marginTop:'-70px',
-      //fontSize:'50px',
-      backgroundPosition: 'center center',
-      backgroundSize: 'contain',
-      backgroundRepeat: 'no-repeat',
-      height: '100vh',
-     
-    };
+
   
     return (
       <section className="relative">
@@ -31,7 +18,7 @@ export const metadata = {
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20 text-orange-500">
               <h1 className="h1"> </h1>
             </div>
-            <div className="pt-10 pb-12 md:pt-40 md:pb-30"  style={backgroundImgStyle}>
+            <div className="pt-10 pb-12 md:pt-40 md:pb-30" >
             </div>
             {/* Page header */}
 
