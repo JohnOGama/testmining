@@ -43,6 +43,7 @@
 
 
 
+
 .nav-item {
   display: flex;
   align-items: center;
@@ -63,13 +64,16 @@
   color: white;
 }
 
+.fa-caret-right {
+  color: white
+}
+
 
 @media screen and (max-width: 960px) {
 
   .navbar {
     position: relative;
    
-    
 }
 
 .nav-menu {
@@ -90,9 +94,8 @@
   opacity: 1;
   transition: all 0.5s ease;
   z-index: 1;
-  width: 500px;
-  left: -12%;
-  
+  width: 100vw;
+  left: -10%;
   align-items : center;
 }
 
@@ -129,7 +132,5 @@
 .fa-times {
   color: white;
 }
-
-
 
 }
