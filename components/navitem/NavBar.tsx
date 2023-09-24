@@ -57,10 +57,58 @@ function Navbar() {
         <ul className={state.clicked ? 'nav-menu active' : 'nav-menu'}>
           
           {navItems.map((item) => {
-             
+            if(item.title === "About") {
+                        
+              return (
+                  
+                <li
+                  key={item.id}
+                  className={item.cName } 
+                  onMouseEnter={() => setDropdownabout(true)}
+                  onMouseLeave={() => setDropdownabout(false)}
+                > 
+
+                  <Link href={''}>{item.title}</Link>
+                  {dropdownabout  
+                  ?   
+                  <i className="fa fa-caret-down">
+                     <DropdownAbout/> 
+                  </i> 
+                  
+                  : <i className="fa fa-caret-right">
+                  </i>  }
+
+                </li>
+              
+              );
+              
+            } else if (item.title === "Services") {
           
+              return (
+                <li
+                  key={item.id}
+                  className={item.cName}
+                  onMouseEnter={() => setDropdown(true)}
+                  onMouseLeave={() => setDropdown(false)}
+                >
+                  <Link href={item.path}>{item.title}</Link>
+                  {dropdown 
+                  ? 
+                  <i className="fa fa-caret-down">
+                   <Dropdown />
+                  </i> 
+               
+                  : 
+                  <i className="fa fa-caret-right">
+                  </i> 
+                  }
+
+                </li>
+              );
+            }
             return (
               <li key={item.id} className={item.cName}>
+                
                 <Link href={item.path}>{item.title}</Link>
               </li>
             );

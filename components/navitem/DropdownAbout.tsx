@@ -11,7 +11,7 @@ function DropdownAbout() {
     <>
 
       <ul
-        className={dropdown ?  "services-submenu clicked" : "services-submenu"}
+        className={dropdown ?  "about-submenu active" : "about-submenu"}
         onClick={() => setDropdown(!dropdown)}
       >
         {
