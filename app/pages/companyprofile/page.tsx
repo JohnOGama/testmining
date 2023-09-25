@@ -28,9 +28,12 @@ export default function CompanyProfile() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6"    >
         <div className="pt-10 pb-12 md:pt-10 md:pb-20"  >
 
-        <div className="max-w-3xl mx-auto text-center pb-20 md:pb-20" >
+        <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20" >
+          <br></br>
+          <br></br>
             <h1 className="h1" style={{color:'#08c5d6'}}>We exist to make it happen.</h1>
           </div>
+          <br></br>
           <div className="pt-10 pb-12 md:pt-40 md:pb-30"  style={backgroundImgStyle}>
           </div>
           {/* Page header */}

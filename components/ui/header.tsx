@@ -100,9 +100,6 @@ export default function Header() {
                                             </ul>
                                         </div>
                                     </li>
-                                    <li className="dropdown-link">
-                                        <a href="#">Link 4</a>
-                                    </li>
                                     <div className="arrow"></div>
                                 </ul>
                             </div>
