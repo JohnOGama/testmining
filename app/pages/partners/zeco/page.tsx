@@ -16,7 +16,7 @@ export default function Zeco() {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     height: '50vh',
-    width: '70vw'
+    width: '100%'
   };
 
   return (
@@ -33,7 +33,7 @@ export default function Zeco() {
             </h5>
             <br></br>
             <h6 className="h6 text-black">
-            <a href='https://www.zecowaste.com/' className='h6 text-black'> Link here: https://www.zecowaste.com/</a>
+            <a href='https://www.zecowaste.com/' className='h6 text-black'> Click here: https://www.zecowaste.com/</a>
             <br></br>
             <br></br>
             The revolutionary & unique, Zēco Waste Machine will save the world from the brink of irreversible climate change. 

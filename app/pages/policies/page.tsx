@@ -14,7 +14,7 @@ export default function Policies() {
    `url(${background.src})`,
     marginTop:'10px',
     backgroundPosition: 'center center',
-    backgroundSize: 'contain',
+    backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     height: '100vh',
    
