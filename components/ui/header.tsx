@@ -109,10 +109,9 @@ export default function Header() {
                                       <Link href="/pages/businessethics">
                                        Business Ethics
                                       </Link>
-                                        
                                     </li>
                                     <li className="dropdown-link">
-                                      <Link href="/pages/services/waste">
+                                      <Link href="/pages/policies">
                                        Policies
                                       </Link>
                                     </li>
@@ -121,21 +120,16 @@ export default function Header() {
                                         <div className="dropdown second">
                                             <ul>
                                                 <li className="dropdown-link">
-                                                    <a href="#">Zeco Industries</a>
+                                                <Link href="/pages/partners/zeco">
+                                                  Zeco Industries
+                                                </Link>
                                                 </li>
-                                                <li className="dropdown-link">
-                                                    <a href="#">Company A</a>
-                                                </li>
-                                                <li className="dropdown-link">
-                                                    <a href="#">Company B</a>
-                                                </li>
-
                                                 <div className="arrow"></div>
                                             </ul>
                                         </div>
                                     </li>
                                     <li className="dropdown-link">
-                                      <Link href="/pages/services/waste">
+                                      <Link href="/pages/risk">
                                        Risk Management
                                       </Link>
                                     </li>

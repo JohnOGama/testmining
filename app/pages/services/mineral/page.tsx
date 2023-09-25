@@ -30,7 +30,7 @@ export default function Mineral() {
   ];
 
   const containerStyles = {
-    width: "800px",
+    width: "100%",
     height: "450px",
     margin: "0 auto",
   };
@@ -43,7 +43,7 @@ export default function Mineral() {
         <div className="max-w-3xl mx-auto text-center pb-20 md:pb-20" >
             <h1 className="h1" style={{color:'#08c5d6'}}>Minerals</h1>
           </div>
-          <div style={containerStyles} >
+          <div className='slidecontainer' style={containerStyles} >
             <ImageSlider slides={slides} />
           </div>
           {/* Page header */}

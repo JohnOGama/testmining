@@ -5,7 +5,7 @@ export const metadata = {
 
 import Link from 'next/link'
 import ModalVideo from '../../../../components/modal-video'
-import VideoThumb from '../../../src/assets/images/waste/wasteMgt.jpg'
+import VideoThumb from '../../../src/assets/images/waste/zeco.jpg'
 
 export default function Waste() {
 
@@ -19,9 +19,9 @@ export default function Waste() {
           <ModalVideo
             thumb={VideoThumb}
             thumbWidth={900}
-            thumbHeight={800}
+            thumbHeight={900}
             thumbAlt="Modal video thumbnail"
-            video= "/videos/Waste_Management.mp4"
+            video= "/videos/waste/ZWM.mp4"
             videoWidth={2000}
             videoHeight={1080} />
           </div>

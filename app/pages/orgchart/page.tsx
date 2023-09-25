@@ -11,12 +11,8 @@ export const metadata = {
   
     const backgroundImgStyle={
       backgroundImage:
-      `url(${background.src})`,
-      //`url("https://img.freepik.com/free-photo/wide-angle-shot-singletree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg")`,
-     
-      
+     `url(${background.src})`,
       marginTop:'10px',
-      //fontSize:'50px',
       backgroundPosition: 'center center',
       backgroundSize: 'contain',
       backgroundRepeat: 'no-repeat',

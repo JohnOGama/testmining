@@ -14,11 +14,6 @@ export default function BusinessEthics() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6"    >
         <div className="pt-10 pb-12 md:pt-10 md:pb-20"  >
 
-          {/* Page header */}
-          
-
-
-
           <div>
             <br></br>
             <h5 className="h4 text-black">
