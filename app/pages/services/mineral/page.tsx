@@ -4,9 +4,9 @@ export const metadata = {
 }
 
 import Link from 'next/link'
-import background from "../../src/assets/images/CompanyProfile.jpg"
+import background from "../../../src/assets/images/CompanyProfile.jpg"
 
-export default function CompanyProfile() {
+export default function Mineral() {
 
   const backgroundImgStyle={
     backgroundImage:
