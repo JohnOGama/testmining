@@ -322,6 +322,7 @@ header{
         transform: translateX(0);
     }
 
+
     #check:checked ~ .nav-btn .nav-link,
     #check:checked ~ .nav-btn .log-sign{
         animation: animation .5s ease forwards;
@@ -331,6 +332,8 @@ header{
         flex: initial;
         width: 100%;
     }
+
+
 
     .nav-links > ul{
         flex-direction: column;

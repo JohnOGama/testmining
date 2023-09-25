@@ -28,8 +28,10 @@ export const metadata = {
         <div className="max-w-6xl mx-auto px-4 sm:px-6" >
           <div className="pt-10 pb-12 md:pt-10 md:pb-20" >
   
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20 text-orange-500">
-              <h1 className="h1"> Aticles and Corporation here</h1>
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20 " style={{color:'#08c5d6'}}>
+              
+              <h1 className="h1" >Articles of Corporation </h1>
+              <h2 className="h3"> Coming soon ... </h2>
           </div>
            
           </div>

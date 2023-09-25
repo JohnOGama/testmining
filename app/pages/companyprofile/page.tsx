@@ -14,7 +14,7 @@ export default function CompanyProfile() {
     //`url("https://img.freepik.com/free-photo/wide-angle-shot-singletree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg")`,
    
     
-    marginTop:'-70px',
+    marginTop:'10px',
     //fontSize:'50px',
     backgroundPosition: 'center center',
     backgroundSize: 'cover',
@@ -28,18 +28,18 @@ export default function CompanyProfile() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6"    >
         <div className="pt-10 pb-12 md:pt-10 md:pb-20"  >
 
-        <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20" >
-          <br></br>
-          <br></br>
+        <div className="max-w-3xl mx-auto text-center pb-12 md:pb-10" >
+
             <h1 className="h1" style={{color:'#08c5d6'}}>We exist to make it happen.</h1>
-          </div>
-          <br></br>
+        </div>
+          
           <div className="pt-10 pb-12 md:pt-40 md:pb-30"  style={backgroundImgStyle}>
           </div>
           {/* Page header */}
           
           <div>
-            <br></br>
+          
+          <br></br>
             <h2 className="h2 text-black" style={{color:'#08c5d6'}}>
             CORPORATE PROFILE
             </h2>

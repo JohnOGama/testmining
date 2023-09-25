@@ -1,4 +1,6 @@
-import React from 'react'
+'use client'
+import React, { useState } from "react";
+
 import Link from 'next/link'
 import MobileMenu from './mobile-menu'
 import Image from 'next/image'
@@ -17,10 +19,14 @@ import 'font-awesome/css/font-awesome.min.css';
 
 
 export default function Header() {
-  return (
-    <header className="flex w-full z-30" style={{backgroundColor:'#08c5d6'}}>
 
-      <div className="container">
+  const [dropdown, setDropdown] = useState(false);
+
+  return (
+    <header className="relative w-full z-30" style={{backgroundColor:'#08c5d6'}}>
+
+        <div className="container">
+        
               <div className="logo-container">
                   <Link href="/"  >
                     <Image className="logo" src={OrcaLogoHeader} alt=''/>
@@ -28,9 +34,9 @@ export default function Header() {
               </div>
               <input type="checkbox" name="" id="check">
               </input>
-              <div className="nav-btn">
+              <div className= "nav-btn">
                 <div className="nav-links">
-                    <ul>
+                    <ul >
                         <li className="nav-link" >
                           <Link href="/">
                             Home
@@ -39,66 +45,33 @@ export default function Header() {
                         <li className="nav-link">
                             <a href="#">About Us<i className="fa fa-caret-down"></i></a>
                             <div className="dropdown">
-                                <ul>
-                                    <li className="dropdown-link">
-                                      <Link href="/pages/companyprofile">
+                                <ul onClick={() => setDropdown(!dropdown)} >
+                                    <li className="dropdown-link ">
+                                      <Link href="/pages/companyprofile" 
+                                      >
                                         Company Profile
                                       </Link>
                                         
                                     </li>
                                     <li className="dropdown-link">
-                                      <Link href="/pages/companyprofile">
+                                      <Link href="/pages/vision">
                                         Mission and Vision
                                       </Link>
                                     </li>
                                     <li className="dropdown-link">
-                                      <Link href="/pages/companyprofile">
+                                      <Link href="/pages/core-values">
                                         Core Values
                                       </Link>
                                     </li>
                                     <li className="dropdown-link">
-                                      <Link href="/pages/companyprofile">
+                                      <Link href="/pages/orgchart">
                                        Organizational Chart
                                       </Link>
                                     </li>
                                     <li className="dropdown-link">
-                                      <Link href="/pages/companyprofile">
+                                      <Link href="/pages/articles">
                                       Articles of Incorporation and By-Laws
                                       </Link>
-                                    </li>
-                                    <li className="dropdown-link">
-                                        <a href="#">Link 3<i className="fa fa-caret-down"></i></a>
-                                        <div className="dropdown second">
-                                            <ul>
-                                                <li className="dropdown-link">
-                                                    <a href="#">Link 1</a>
-                                                </li>
-                                                <li className="dropdown-link">
-                                                    <a href="#">Link 2</a>
-                                                </li>
-                                                <li className="dropdown-link">
-                                                    <a href="#">Link 3</a>
-                                                </li>
-                                                <li className="dropdown-link">
-                                                    <a href="#">More<i className="fa fa-caret-down"></i></a>
-                                                    <div className="dropdown second">
-                                                        <ul>
-                                                            <li className="dropdown-link">
-                                                                <a href="#">Link 1</a>
-                                                            </li>
-                                                            <li className="dropdown-link">
-                                                                <a href="#">Link 2</a>
-                                                            </li>
-                                                            <li className="dropdown-link">
-                                                                <a href="#">Link 3</a>
-                                                            </li>
-                                                            <div className="arrow"></div>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                                <div className="arrow"></div>
-                                            </ul>
-                                        </div>
                                     </li>
                                     <div className="arrow"></div>
                                 </ul>
@@ -133,7 +106,7 @@ export default function Header() {
                             <div className="dropdown">
                                 <ul>
                                     <li className="dropdown-link">
-                                      <Link href="/pages/services/mineral">
+                                      <Link href="/pages/businessethics">
                                        Business Ethics
                                       </Link>
                                         
@@ -181,6 +154,7 @@ export default function Header() {
                     <div></div>
                 </div>
             </div>
+        
         </div>
     </header>
     
