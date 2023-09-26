@@ -47,3 +47,16 @@
 .logo {
     mix-blend-mode: multiply;
 }
+
+.imgcontact {
+    background-color: orange;
+    align-content:center;
+    align-items:start;
+    width: 10px;
+    height: 10px;
+}
+
+.modalvideomain {
+    width: 10px;
+    height: 10px;
+}
