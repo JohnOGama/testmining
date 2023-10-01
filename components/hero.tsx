@@ -19,20 +19,18 @@ export default function Hero() {
             <h1 className='text-5xl' >Let's talk your requirement</h1>
             <p className="text-6sm text-gray-800 mb-8 " >Mining , Construction and Waste Management Industry is our expertise. Making the complex simple.</p>
             <div className="text-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-              <div  className="relative">
-                <a className="btn text-white bg-gray-500 w-22 h-20 " href="#0" style={{backgroundColor:'#08c5d6'}}>
+              <div  className="flex">
+                <a className="btn text-white w-22 h-20 " href="#0" style={{backgroundColor:'#08c5d6'}}>
                   {/* 
                   btn text-white bg-gray-800 hover:bg-orange-500 w-30 
                   style={{alignContent:'normal',alignItems:'left', width: '50px',height:'50px'}}
                   */}
-                <Image src={contactus} alt={""} style={{alignContent:'normal',textAlign: 'left',
-                 alignItems:'left', width: '50px',height:'50px'}} > 
-                </Image>
-                <div className="text-2xl text-black md:pb-15">
-                (+63) 915 1234567 
+                <Image src={contactus} alt={""} style={{alignContent:'normal',textAlign: 'left', alignItems:'left', width: '50px',height:'50px'}} > 
+                </Image> 
+                <div className="text-white text-2xl">
+                 (+63) 915 1234567 
                  <br></br> (+63) 915 8888888
-                </div> 
-                
+                 </div>
                 </a> 
                 
               </div>

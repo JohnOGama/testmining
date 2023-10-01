@@ -16,14 +16,14 @@ ul{
 a{
     text-decoration: none;
 }
+
 header{
-    position:fixed;
+    position:sticky;
     top: 0px;
-    background-color: #60b4df;
+    background-color: #08c5d6;
     width: 100%;
     z-index: 1000;
 }
-
 
 .overlay{
     position: absolute;
@@ -56,7 +56,7 @@ header{
 }
 
 .nav-links{
-    flex: 3;
+    flex: 2;
     
 }
 
@@ -293,7 +293,7 @@ header{
     }
 }
 
-@media (max-width: 960px){
+@media (max-width: 920px){
     .hamburger-menu-container{
         display: flex;
     }
@@ -302,9 +302,10 @@ header{
         display: block;
     }
 
+
     .nav-btn{
         position: fixed;
-        height: calc(60vh - 3rem);
+        height: calc(80vh - 3rem);
         top: 3.9rem;
         left: 0;
         width: 100%;
@@ -328,15 +329,18 @@ header{
         animation: animation .5s ease forwards;
     }
 
+    
+
     .nav-links{
         flex: initial;
         width: 100%;
+        transform: translateX(50);
     }
 
 
 
     .nav-links > ul{
-        flex-direction: column;
+        flex-direction:column;
     }
 
     .nav-link{
@@ -350,10 +354,14 @@ header{
         padding: 1.6rem 2rem;
     }
 
+    {/* 
+        #50a9d6
+    */}
     .nav-link:hover > a{
         transform: scale(1);
-        background-color: #50a9d6;
+        background-color: blue;
     }
+
 
     .dropdown, .dropdown.second{
         position: initial;
@@ -372,6 +380,7 @@ header{
     .dropdown-link:hover > .dropdown{
         display: block;
     }
+
 
     .nav-link:hover > a > i,
     .dropdown-link:hover > a > i{

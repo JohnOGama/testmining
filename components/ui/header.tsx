@@ -20,10 +20,9 @@ import 'font-awesome/css/font-awesome.min.css';
 
 export default function Header() {
 
-  const [dropdown, setDropdown] = useState(false);
-
+ 
   return (
-    <header className="relative w-full z-30" style={{backgroundColor:'#08c5d6'}}>
+    <header>
 
         <div className="container">
         
@@ -34,10 +33,11 @@ export default function Header() {
               </div>
               <input type="checkbox" name="" id="check">
               </input>
-              <div className= "nav-btn">
-                <div className="nav-links">
+              <div className= "nav-btn" >
+                <div className="nav-links" >
                     <ul >
-                        <li className="nav-link" >
+                        <li className="nav-link"
+                        >
                           <Link href="/">
                             Home
                           </Link>
@@ -45,7 +45,7 @@ export default function Header() {
                         <li className="nav-link">
                             <a href="#">About Us<i className="fa fa-caret-down"></i></a>
                             <div className="dropdown">
-                                <ul onClick={() => setDropdown(!dropdown)} >
+                                <ul >
                                     <li className="dropdown-link ">
                                       <Link href="/pages/companyprofile" 
                                       >
