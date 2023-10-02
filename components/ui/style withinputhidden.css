@@ -61,14 +61,14 @@ header{
 
 .nav-links{
     flex: 1;
-
+    
 }
+
 
 .nav-links > ul{
     display:flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .nav-link{
@@ -78,17 +78,17 @@ header{
 .nav-link > a{
     line-height: 3rem;
     color: #fff;
-    padding: .5em;
+    padding: 0 .8rem;
     letter-spacing: 1px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: .2s;
+    transition: .5s;
 }
 
 .nav-link > a > i{
-    margin-left: .5em;
+    margin-left: .2rem;
 }
 
 .nav-link:hover > a{
@@ -104,12 +104,10 @@ header{
     opacity: 0;
     pointer-events: none;
     transition: .5s;
-    
 }
 
 .dropdown ul{
     position: relative;
-    
 }
 
 .dropdown-link > a{
@@ -124,15 +122,10 @@ header{
     
 }
 
-
-  
-
 .dropdown-link:hover > a{
     background-color: #3498db;
     color: #fff;
 }
-
-
 
 .dropdown-link:not(:nth-last-child(2)){
     border-bottom: 1px solid #efefef;
@@ -181,7 +174,15 @@ header{
     transform: translate(0, 0);
     opacity: 1;
     pointer-events:auto;
-    
+}
+
+#toggleaboutus:checked ~ i{
+    transform: rotate(90deg);
+}
+
+
+#toggleaboutus:checked ~ .dropdown{
+    display: none;
 }
 
 
@@ -245,28 +246,22 @@ header{
 
 }
 
-/* added : 10/01
-    Purpose : Trigger to click show and hide the dropdown elemnent */
 #toggleaboutus{
     position:absolute;
     width: 100%;
-    height: 4rem;    
+    height: 4rem;
+    
     cursor: pointer;
     z-index: 90000;
-     opacity: 0;
-       /* display: no;
-    opacity: 0;
+    
+       /* display: no; 
     cursor: pointer;
-    transform: translateY(-50%);
-    z-index: 90000;
+     transform: translateY(-50%);
+       
+         opacity: 0;
+           z-index: 90000;
    */
 }
-
-
-.dropdown.clicked{
-    display: none;
-}
-
 
 
 #check:checked ~ .hamburger-menu-container .hamburger-menu div{
@@ -292,7 +287,7 @@ header{
     }
 }
 
-@media (max-width: 960px){
+@media (max-width: 920px){
     .hamburger-menu-container{
         display: flex;
     }
@@ -322,17 +317,6 @@ header{
         transform: translateX(0);
     }
 
-    /* added : 10/01
-    Purpose : Trigger to click show and hide the dropdown elemnent */
-    #toggleaboutus:checked ~ a > i{
-        transform: rotate(0deg);
-    }
- 
-    #toggleaboutus:checked ~ .dropdown {
-        display: block;
-    
-    }
- /* end here */
 
     #check:checked ~ .nav-btn .nav-link,
     #check:checked ~ .nav-btn .log-sign{
@@ -364,12 +348,12 @@ header{
         padding: 1.6rem 2rem;
     }
 
-    /* {/* 
+    {/* 
         #50a9d6
-    //}*/
+    */}
     .nav-link:hover > a{
         transform: scale(1);
-        background-color:  #50a9d6;
+        background-color: blue;
     }
 
 
@@ -386,27 +370,16 @@ header{
         display: none;
     }
     
-    {/* 
-    added : 10/01
-    Purpose : Remove the hover on mobile menu
-        .nav-link:hover > a > i,
-    .dropdown-link:hover > a ~ i{
-        transform: rotate(360deg);
-    }
-
-        .nav-link:hover > .dropdown,
+    .nav-link:hover > .dropdown,
     .dropdown-link:hover > .dropdown{
         display: block;
     }
 
-    */}
-    .nav-link:hover > .dropdown,
-    .dropdown-link:hover > .dropdown{
-        display: none;
+
+    .nav-link:hover > a > i,
+    .dropdown-link:hover > a > i{
+        transform: rotate(360deg);
     }
-
-
-
 
     .dropdown-link > a{
         background-color: transparent;

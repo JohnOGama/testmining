@@ -1,29 +1,158 @@
+'use client'
+import React, { useState } from "react";
+
 import Link from 'next/link'
 import MobileMenu from './mobile-menu'
 import Image from 'next/image'
 import Navbar from '../navitem/NavBar'
 
+import './style.css'
+
 import OrcaLogoHeader from "../../app/src/assets/images/OrcaLogoHeader.png"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { icon } from "@fortawesome/fontawesome-svg-core";
+import { faPenNib } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+
+import 'font-awesome/css/font-awesome.min.css';
+
 export default function Header() {
+
+  //const [isOpen, setIsOpen] = useState(false);
+  //const toggle = () => setIsOpen(!isOpen);
+ 
   return (
-    <header className="flex w-full z-30" style={{backgroundColor:'#08c5d6'}}>
-      <div className="max-w-6sm mx-auto px-4 sm:px-6 ">
-        <div className="flex items-center justify-between h-30">
-          {/* Site branding */}
-          <div className="shrink-0 mr-1">
-            {/* Logo */}
-            <Link href="/"  >
-              <Image src={OrcaLogoHeader} alt=''/>
-            </Link>
-           
-          </div>
+
+    <header>
+     
+        <div className="container">
         
+              <div className="logo-container">
+                  <Link href="/"  >
+                    <Image className="logo" src={OrcaLogoHeader} alt=''/>
+                  </Link>
+              </div>
+              <input type="checkbox" name="" id="check">
+              </input>
+              <div className= "nav-btn" >
+                <div className="nav-links" >
+                    <ul >
+                        <li className="nav-link">
+                          <Link href="/">
+                            Home
+                          </Link>
+                        </li>
+                        <li className="nav-link">
+                            <a href="#">About Us<i className="fa fa-caret-down"></i></a>
+
+                            <div className="dropdown">
+                                <ul >
+                                    <li className="dropdown-link ">
+                                      <Link  href="/pages/companyprofile" 
+                                      >
+                                        Company Profile
+                                      </Link>
+                                        
+                                    </li>
+                                    <li className="dropdown-link">
+                                      <Link href="/pages/vision">
+                                        Mission and Vision
+                                      </Link>
+                                    </li>
+                                    <li className="dropdown-link">
+                                      <Link href="/pages/core-values">
+                                        Core Values
+                                      </Link>
+                                    </li>
+                                    <li className="dropdown-link">
+                                      <Link href="/pages/orgchart">
+                                       Organizational Chart
+                                      </Link>
+                                    </li>
+                                    <li className="dropdown-link">
+                                      <Link href="/pages/articles">
+                                      Articles of Incorporation and By-Laws
+                                      </Link>
+                                    </li>
+                                    <div className="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li className="nav-link" >
+                            <a href="#">Services<i className="fa fa-caret-down"></i></a>
+                            <div className="dropdown">
+                                <ul>
+                                    <li className="dropdown-link">
+                                      <Link href="/pages/services/mineral">
+                                        Mineral Supply
+                                      </Link>
+                                        
+                                    </li>
+                                    <li className="dropdown-link">
+                                      <Link href="/pages/services/waste">
+                                        Waste Management 
+                                      </Link>
+                                    </li>
+                                    <li className="dropdown-link">
+                                      <Link href="/pages/services/construction">
+                                        Construction
+                                      </Link>
+                                    </li>
+                                    <div className="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li className="nav-link" >
+                            <a href="#">Corporate Governance<i className="fa fa-caret-down"></i></a>
+                            <div className="dropdown">
+                                <ul>
+                                    <li className="dropdown-link">
+                                      <Link href="/pages/businessethics">
+                                       Business Ethics
+                                      </Link>
+                                    </li>
+                                    <li className="dropdown-link">
+                                      <Link href="/pages/policies">
+                                       Policies
+                                      </Link>
+                                    </li>
+                                    <li className="dropdown-link">
+                                        <a href="#">Partners<i className="fa fa-caret-down"></i></a>
+                                        <div className="dropdown second">
+                                            <ul>
+                                                <li className="dropdown-link">
+                                                <Link href="/pages/partners/zeco">
+                                                  Zeco Industries
+                                                </Link>
+                                                </li>
+                                                <div className="arrow"></div>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li className="dropdown-link">
+                                      <Link href="/pages/risk">
+                                       Risk Management
+                                      </Link>
+                                    </li>
+                                    <div className="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+              </div>
+
+            <div className="hamburger-menu-container">
+                <div className="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
         
         </div>
-        
-      </div>
-      <Navbar/>
+
+
     </header>
     
   )
