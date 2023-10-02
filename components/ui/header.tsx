@@ -17,13 +17,18 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 import 'font-awesome/css/font-awesome.min.css';
 
-
 export default function Header() {
 
+  //const [isOpen, setIsOpen] = useState(false);
+  //const toggle = () => setIsOpen(!isOpen);
  
-  return (
-    <header>
+  const [dropdown, setDropdown] = useState(false);
 
+  return (
+
+
+    <header>
+     
         <div className="container">
         
               <div className="logo-container">
@@ -36,25 +41,29 @@ export default function Header() {
               <div className= "nav-btn" >
                 <div className="nav-links" >
                     <ul >
-                        <li className="nav-link"
-                        >
-                          <Link href="/">
+                        <li className="nav-link" >
+                          <Link href="/" >
                             Home
                           </Link>
                         </li>
                         <li className="nav-link">
+                        <input type="checkbox" name="" id="toggleaboutus">
+                        </input>
                             <a href="#">About Us<i className="fa fa-caret-down"></i></a>
-                            <div className="dropdown">
-                                <ul >
-                                    <li className="dropdown-link ">
-                                      <Link href="/pages/companyprofile" 
+                            <div className= {dropdown ? "dropdown clicked" : "dropdown"} onClick={() => setDropdown(!dropdown)} >
+                                <ul>
+                                    <li className= "dropdown-link" >
+                                      <Link  href="/pages/companyprofile"
+                                      onClick={() => setDropdown(false)}
                                       >
                                         Company Profile
                                       </Link>
                                         
                                     </li>
                                     <li className="dropdown-link">
-                                      <Link href="/pages/vision">
+                                      <Link href="/pages/vision"
+                                       onClick={() => setDropdown(false)}
+                                      >
                                         Mission and Vision
                                       </Link>
                                     </li>
@@ -140,8 +149,7 @@ export default function Header() {
 
                     </ul>
                 </div>
-
-            </div>
+              </div>
 
             <div className="hamburger-menu-container">
                 <div className="hamburger-menu">
@@ -150,6 +158,8 @@ export default function Header() {
             </div>
         
         </div>
+
+
     </header>
     
   )
