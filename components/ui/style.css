@@ -18,7 +18,7 @@ a{
 }
 
 header{
-    position:sticky;
+    position: fixed;
     top: 0px;
     background-color: #08c5d6;
     width: 100%;
@@ -56,6 +56,7 @@ header{
     display: flex;
     /* align-items: center; to center the menu */
     align-items: center;
+    margin-top: -7px;
     
 }
 
@@ -230,20 +231,7 @@ header{
     transform: translateY(7px);
 }
 
-#check{
-    position: absolute;
 
-    right: 1.5rem;
-   
-    width: 2.5rem;
-    height: 2.5rem;
-    top: 40%;
-    cursor: pointer;
-    transform: translateY(-50%);
-    opacity: 0;
-    z-index: 90000;
-
-}
 
 /* added : 10/01
     Purpose : Trigger to click show and hide the dropdown elemnent */
@@ -266,7 +254,20 @@ header{
 .dropdown.clicked{
     display: none;
 }
+#check{
+    position: absolute;
 
+    right: 1.5rem;
+   
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 40%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    opacity: 0;
+    z-index: 90000;
+
+}
 
 
 #check:checked ~ .hamburger-menu-container .hamburger-menu div{
@@ -280,6 +281,16 @@ header{
 #check:checked ~ .hamburger-menu-container .hamburger-menu div:after{
     transform: translateY(0) rotate(45deg);
 }
+
+#check:checked ~ .hamburger-menu-container .hamburger-menu div:before {
+    transform: translateY(0) rotate(-45deg); /* Your open menu styles here */
+}
+
+#check:checked ~ .hamburger-menu-container .hamburger-menu div:after {
+    transform: translateY(0) rotate(45deg); /* Your open menu styles here */
+}
+
+
 
 @keyframes animation{
     from{
