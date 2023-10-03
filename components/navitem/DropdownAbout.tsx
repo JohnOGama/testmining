@@ -7,11 +7,16 @@ import "./DropdownAbout.css";
 function DropdownAbout() {
   const [dropdown, setDropdown] = useState(false);
 
+  alert()
+
   return (
     <>
       <ul
-        className={dropdown ? "about-submenu active" : "about-submenu"}
-        onClick={() => setDropdown(!dropdown)}
+        className={dropdown ?  "about-submenu active" : "about-submenu"}
+        onClick={() => {
+          setDropdown(!dropdown)
+          alert("")
+        }}
       >
         {aboutDropdown.map((item) => {
           {

@@ -79,17 +79,17 @@ header{
 .nav-link > a{
     line-height: 3rem;
     color: #fff;
-    padding: 0 .8rem;
+    padding: .5em;
     letter-spacing: 1px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: .5s;
+    transition: .2s;
 }
 
 .nav-link > a > i{
-    margin-left: .2rem;
+    margin-left: .5em;
 }
 
 .nav-link:hover > a{
@@ -375,9 +375,9 @@ header{
         padding: 1.6rem 2rem;
     }
 
-    {/* 
+    /* {/* 
         #50a9d6
-    */}
+    //}*/
     .nav-link:hover > a{
         transform: scale(1);
         background-color:  #50a9d6;
