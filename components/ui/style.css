@@ -18,7 +18,7 @@ a{
 }
 
 header{
-    position:sticky;
+    position: fixed;
     top: 0px;
     background-color: #08c5d6;
     width: 100%;
@@ -364,9 +364,7 @@ header{
         padding: 1.6rem 2rem;
     }
 
-    {/* 
-        #50a9d6
-    */}
+ 
     .nav-link:hover > a{
         transform: scale(1);
         background-color:  #50a9d6;
@@ -386,20 +384,7 @@ header{
         display: none;
     }
     
-    {/* 
-    added : 10/01
-    Purpose : Remove the hover on mobile menu
-        .nav-link:hover > a > i,
-    .dropdown-link:hover > a ~ i{
-        transform: rotate(360deg);
-    }
-
-        .nav-link:hover > .dropdown,
-    .dropdown-link:hover > .dropdown{
-        display: block;
-    }
-
-    */}
+    
     .nav-link:hover > .dropdown,
     .dropdown-link:hover > .dropdown{
         display: none;
