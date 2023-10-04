@@ -22,6 +22,8 @@
     "font-awesome": "^4.7.0",
     "framer": "^2.4.1",
     "motion": "^10.16.4",
+    "framer-motion": "^10.16.4",
+    "hamburgers": "^1.2.1",
     "next": "^13.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
